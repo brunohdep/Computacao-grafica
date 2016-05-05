@@ -47,3 +47,6 @@ C:\Users\a120002\Downloads\image-processing-examples-master (1)\image-processing
 C:\Users\a120002\Downloads\image-processing-examples-master (1)\image-processing-examples-master\ImageProcess\bin\Debug\AForge.Vision.xml
 C:\Users\a120002\Downloads\image-processing-examples-master (1)\image-processing-examples-master\ImageProcess\obj\Debug\ImageProcess.exe
 C:\Users\a120002\Downloads\image-processing-examples-master (1)\image-processing-examples-master\ImageProcess\obj\Debug\ImageProcess.pdb
+C:\Users\a120002\Downloads\CG\Computa--o-grafica\ImageProcess\ImageProcess\bin\Debug\ImageProcess.exe.config
+C:\Users\a120002\Downloads\CG\Computa--o-grafica\ImageProcess\ImageProcess\obj\Debug\ImageProcess.exe
+C:\Users\a120002\Downloads\CG\Computa--o-grafica\ImageProcess\ImageProcess\obj\Debug\ImageProcess.pdb
