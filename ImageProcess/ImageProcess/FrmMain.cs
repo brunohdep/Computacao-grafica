@@ -109,33 +109,24 @@ namespace ImageProcess
             var showImg = (Bitmap)currentImage.Clone();
             img = Grayscale.CommonAlgorithms.Y.Apply(img);
             img = new OtsuThreshold().Apply(img);
-            short[,] se =
-            {
-                {-1, 1,-1},
-                { 1, 1, 1},
-                {-1, 1,-1}
-            };
-            for (int i = 0; i < 3; i++)
-            {
-                img = new Dilatation(se).Apply(img);
-            }
+            img = new Erosion().Apply(img);
             img = new Invert().Apply(img);
 
             BlobCounter bc = new BlobCounter();
             bc.BackgroundThreshold = Color.Black;            
             bc.ProcessImage(img);
             MessageBox.Show(String.Format("The image contains {0} objects.", bc.ObjectsCount));
-           
+
             Rectangle rect = new Rectangle(0, 0, showImg.Width, showImg.Height);
             BitmapData bmpData = showImg.LockBits(rect, ImageLockMode.ReadWrite, showImg.PixelFormat);
             
             bc.GetObjectsRectangles().ToList().ForEach(i=>{
-                Drawing.Rectangle(bmpData, i, Color.Red);
+                Drawing.Rectangle(bmpData, i, Color.GreenYellow);
             });
 
             showImg.UnlockBits(bmpData);
 
-            pictureBox.Image = img;
+            pictureBox.Image = showImg;
         }
     }
 }
