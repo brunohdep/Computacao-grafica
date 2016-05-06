@@ -42,11 +42,12 @@
             this.thresholdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aforgeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medianToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.detectObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFileName = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.panelImage = new System.Windows.Forms.Panel();
-            this.detectObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.processarPlacaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
@@ -157,7 +158,8 @@
             // 
             this.aforgeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.medianToolStripMenuItem1,
-            this.detectObjectsToolStripMenuItem});
+            this.detectObjectsToolStripMenuItem,
+            this.processarPlacaToolStripMenuItem});
             this.aforgeToolStripMenuItem.Name = "aforgeToolStripMenuItem";
             this.aforgeToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.aforgeToolStripMenuItem.Text = "Aforge";
@@ -165,9 +167,16 @@
             // medianToolStripMenuItem1
             // 
             this.medianToolStripMenuItem1.Name = "medianToolStripMenuItem1";
-            this.medianToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.medianToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
             this.medianToolStripMenuItem1.Text = "Median";
             this.medianToolStripMenuItem1.Click += new System.EventHandler(this.medianToolStripMenuItem1_Click);
+            // 
+            // detectObjectsToolStripMenuItem
+            // 
+            this.detectObjectsToolStripMenuItem.Name = "detectObjectsToolStripMenuItem";
+            this.detectObjectsToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.detectObjectsToolStripMenuItem.Text = "DetectObjects";
+            this.detectObjectsToolStripMenuItem.Click += new System.EventHandler(this.detectObjectsToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -204,12 +213,12 @@
             this.panelImage.Size = new System.Drawing.Size(292, 291);
             this.panelImage.TabIndex = 0;
             // 
-            // detectObjectsToolStripMenuItem
+            // processarPlacaToolStripMenuItem
             // 
-            this.detectObjectsToolStripMenuItem.Name = "detectObjectsToolStripMenuItem";
-            this.detectObjectsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.detectObjectsToolStripMenuItem.Text = "DetectObjects";
-            this.detectObjectsToolStripMenuItem.Click += new System.EventHandler(this.detectObjectsToolStripMenuItem_Click);
+            this.processarPlacaToolStripMenuItem.Name = "processarPlacaToolStripMenuItem";
+            this.processarPlacaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.processarPlacaToolStripMenuItem.Text = "Processar Placa";
+            this.processarPlacaToolStripMenuItem.Click += new System.EventHandler(this.processarPlacaToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -256,6 +265,7 @@
         private System.Windows.Forms.ToolStripMenuItem aforgeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medianToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem detectObjectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem processarPlacaToolStripMenuItem;
     }
 }
 

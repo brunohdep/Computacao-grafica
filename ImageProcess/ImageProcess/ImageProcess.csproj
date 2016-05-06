@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="filters\Gray.cs" />
+    <Compile Include="filters\ProcessPlaca.cs" />
     <Compile Include="filters\Threshold.cs" />
     <Compile Include="filters\Median.cs" />
     <Compile Include="filters\Mean.cs" />

@@ -1,5 +1,6 @@
 ﻿using AForge.Imaging;
 using AForge.Imaging.Filters;
+using ImageProcess.filters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -127,6 +128,14 @@ namespace ImageProcess
             showImg.UnlockBits(bmpData);
 
             pictureBox.Image = showImg;
+        }
+
+        private void processarPlacaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var img = (Bitmap)currentImage.Clone();
+            var p = new ProcessPlaca();
+            img = p.process(img);
+            pictureBox.Image = img;
         }
     }
 }
