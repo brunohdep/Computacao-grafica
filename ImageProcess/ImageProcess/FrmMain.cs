@@ -135,7 +135,8 @@ namespace ImageProcess
             var img = (Bitmap)currentImage.Clone();
             var p = new ProcessPlaca();
             img = p.process(img);
-            pictureBox.Image = img;
+            currentImage = img;
+            pictureBox.Image = currentImage;
         }
     }
 }
