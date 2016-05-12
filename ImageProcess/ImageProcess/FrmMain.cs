@@ -139,17 +139,6 @@ namespace ImageProcess
             currentImage = img;
             pictureBox.Image = currentImage;
 
-            BlobCounter bc = new BlobCounter();
-            bc.BackgroundThreshold = Color.Black;
-            bc.ProcessImage(img);
-            MessageBox.Show(String.Format("The image contains {0} objects.", bc.ObjectsCount));
-
-            Rectangle rect = new Rectangle(0, 0, showImg.Width, showImg.Height);
-            BitmapData bmpData = showImg.LockBits(rect, ImageLockMode.ReadWrite, showImg.PixelFormat);
-
-            bc.GetObjectsRectangles().ToList().ForEach(i => {
-                Drawing.Rectangle(bmpData, i, Color.GreenYellow);
-            });
         }
     }
 }
